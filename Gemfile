@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use postgresql as the database for Active Record
@@ -57,13 +58,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # appdev gems
 group :development do
-  gem 'activeadmin'
+  #gem 'activeadmin'
   gem 'annotate'
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
-  gem 'devise'
+ 
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
   gem 'faker'
   gem 'pry-rails'
